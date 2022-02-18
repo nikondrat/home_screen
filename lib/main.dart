@@ -6,7 +6,7 @@ void main(List<String> args) {
   runApp(const MyApp());
 }
 
-String path = '';
+String path = '/storage/emulated/0/DCIM/Camera/images/home.png';
 
 Future updateImage() async {
   await HomeWidget.saveWidgetData<String>("path", path);
