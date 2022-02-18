@@ -19,12 +19,9 @@ class AppWidgetProvider : HomeWidgetProvider() {
                     MainActivity::class.java)
                 setOnClickPendingIntent(R.id.widget_root, pendingIntent)
 
-                val path = widgetData.getString("path", "")
+                val path = widgetData.getString("path", "/storage/emulated/0/Android/data/com.example.home_screen/files/screenshot.png")
                 setImageViewUri(R.id.imageView, Uri.parse(path))
 
-                val backgroundIntent = HomeWidgetBackgroundIntent.getBroadcast(context,
-                    Uri.parse("myAppWidget://updateimage"))
-                setOnClickPendingIntent(R.id.button, backgroundIntent)
             }
             appWidgetManager.updateAppWidget(widgetId, views)
         }

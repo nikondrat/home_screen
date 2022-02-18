@@ -15,15 +15,7 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="320dp" />
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-
-            android:minHeight="50dp"
-            android:text="Обновить" />
+            android:layout_height="match_parent" />
 
     </LinearLayout>
 
